@@ -36,7 +36,8 @@ router.route('/notes/:note_id')
                 res.send(err);
 
             res.json(note);
-        })
+        });
+        req.end();
     })
 
     .put(function(req, res) {
