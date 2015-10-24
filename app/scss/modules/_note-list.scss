@@ -1,0 +1,15 @@
+//--------------------------------------------------------------
+// Note List
+//--------------------------------------------------------------
+
+ul.note-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 30px 0 0 0;
+
+	li {
+		border-bottom: 1px solid darken($color-light-gray, 10%);
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+}

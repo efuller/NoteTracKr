@@ -1,0 +1,40 @@
+//--------------------------------------------------------------
+// Base Form Styles
+//--------------------------------------------------------------
+
+#{$all-buttons} {
+	background-color: $color-bold-teal;
+	border: 0;
+	color: $color-white;
+
+	&:hover {
+		background-color: lighten($color-bold-teal, 5%);
+	}
+}
+
+// Input
+input[type="text"] {
+	border: 0;
+	display: block;
+	height: 50px;
+	margin-bottom: 5px;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.btn-add {
+	height: 50px;
+	width:100%;
+}
+
+.btn-remove {
+	background: transparent;
+	color: $color-bold-teal;
+	float: right;
+
+	&:hover {
+		background: transparent;
+		color: $color-dark-teal;
+
+	}
+}
