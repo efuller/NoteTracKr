@@ -3,7 +3,7 @@ var React = require('react');
 var RemoveNote = React.createClass({
 
     handleRemove: function() {
-        //console.log(this.props);
+        console.log(this.props);
         //this.props.onRemove(this.props.noteKey);
         this.props.onRemove(this.props.noteID);
     },

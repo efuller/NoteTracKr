@@ -35,6 +35,7 @@ var App = React.createClass({
             data: { note: newNote }
         })
         .done(function(data) {
+                console.log(this.state);
                 newNotes = this.state.notes.concat([data]);
 
                 this.setState({
