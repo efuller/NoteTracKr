@@ -13,7 +13,7 @@ router.route('/notes')
             if ( err ) {
                 res.send( err );
             }
-            res.json({note: note.note});
+            res.json({_id: note.id, note: note.note});
 
         });
     })
@@ -60,10 +60,14 @@ router.route('/notes/:note_id')
         Note.remove({
             _id: req.params.note_id
         }, function(err, note) {
-            if ( err )
-                res.send(err);
+            if ( err ) {
+                console.log(err);
+                return res.status(500).send();
+            }
 
-            res.json({message: 'Successfully delete'});
+            return res.status(200).send();
+
+            //res.json({ message: 'Successfully delete' });
         });
     });
 
